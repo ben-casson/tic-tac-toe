@@ -27,9 +27,7 @@ h1 {
 
 .players-container {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
-    /* gap: 20px; */
     margin-top: -30px;
 }
     .player-container {
