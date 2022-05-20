@@ -7,6 +7,7 @@ body {
     font-size: calc(0.9em + 1vmin);
     font-family: Arial, Helvetica, sans-serif;
     gap: 5vh;
+    background-color: rgb(252, 252, 255);
 }
 button {
     cursor: pointer;
@@ -18,6 +19,7 @@ button {
 h1 {
     font-size: calc(2.5em + 1vmin);
     margin-top: 2.5vh;
+    font-weight: 400;
 }
 
 
@@ -39,6 +41,7 @@ h1 {
             text-align: center;
             border: none;
             outline: none;
+            background-color: rgb(252, 252, 255);
         }
         .bot-btn {
             justify-self: center;
@@ -68,6 +71,7 @@ h1 {
     .players-container {
         flex-direction: row;
         gap: 50px;
+        margin-top: 0px;
     }
 }
 @media (min-width: 1000px) {
@@ -111,7 +115,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 2%;
+    gap: 2px;
     background-color: rgba(0, 0, 0, 0.05);
 }
     .game-grid > * {
@@ -124,18 +128,18 @@ h1 {
         cursor: pointer;
     }
     .grid-btn {
-        background-color: #fff;
+        background-color: rgb(252, 252, 255);
     }
 @media (min-width: 500px) and (min-height: 700px) {
     .game-grid {
         width: 40vh;
         height: 40vh;
-        gap: 1%;
     }
 }
 @media (min-width: 1000px) and (min-height: 800px) {
     .game-grid {
         width: 50vh;
         height: 50vh;
+        gap: 3px;
     }
 }
