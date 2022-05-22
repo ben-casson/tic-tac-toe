@@ -23,6 +23,8 @@ const gameSquaresArray = [...gameSquares];
 
 let moveNumber = 1;
 
+let displayCount = 0;
+
 let gameIsActive = false;
 
 
@@ -56,6 +58,7 @@ const Gameboard = () => {
 
 
 function resetGame(gameboardArray) {
+    displayCount = 0;
     gameIsActive = false;
     resetBtn.style.display = "none";
     playBtn.style.display = "block";
@@ -77,12 +80,14 @@ function displayGamePiece(gameboardArray) {
                 if (moveNumber % 2 !== 0 && square.innerHTML === "") {
                     square.innerHTML = "X";
                     moveNumber++;
+                    displayCount++;
                     updateGameboardArray(square, gameboardArray);
                     checkForWin(gameboardArray);
                 }
                 else if (moveNumber % 2 === 0 && square.innerHTML === "") {
                     square.innerHTML = "O";
                     moveNumber++;
+                    displayCount++;
                     updateGameboardArray(square, gameboardArray);
                     checkForWin(gameboardArray);
                 }
@@ -117,6 +122,11 @@ function checkForWin(gameboardArray) {
              (gameboardArray[2] === "O" && gameboardArray[4] === "O" && gameboardArray[6] === "O")) {
                 alert((player2NameInput.value || "Player 2") + " wins!");
                 resetGame(gameboardArray);
+    }
+    
+    if (displayCount === 9) {
+        alert("It's a tie!");
+        resetGame(gameboardArray);
     }
 }
 
