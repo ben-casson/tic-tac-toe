@@ -31,9 +31,9 @@ h1 {
     margin-top: -30px;
 }
     .player-container {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .player1-container {
         align-items: right;
