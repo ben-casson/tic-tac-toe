@@ -4,7 +4,6 @@ const resetBtn = document.querySelector(".reset-btn");
 
 const player1NameInput = document.querySelector(".player1-input");
 const player2NameInput = document.querySelector(".player2-input");
-const playerNameInputs = document.querySelector(".player-input");
 
 const gameGrid = document.querySelector(".game-grid");
 
@@ -72,7 +71,6 @@ function resetGame(gameboardArray) {
 }
 
 
-
 function displayGamePiece(gameboardArray) {
     gameSquaresArray.forEach((square) => {
         square.addEventListener("click", () => {
@@ -99,6 +97,7 @@ function updateGameboardArray(square, gameboardArray) {
     let index = gameSquaresArray.indexOf(square);
     gameboardArray[index] = square.innerHTML;
 }
+
 
 function checkForWin(gameboardArray) {
     if ((gameboardArray[0] === "X" && gameboardArray[1] === "X" && gameboardArray[2] === "X") ||
@@ -129,7 +128,6 @@ function checkForWin(gameboardArray) {
         resetGame(gameboardArray);
     }
 }
-
 
 
 playBtn.addEventListener("click", () => {
