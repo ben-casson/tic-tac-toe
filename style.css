@@ -1,6 +1,4 @@
 body {
-    /* height: 100vh;
-    width: 100vw; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,10 +7,15 @@ body {
     gap: 5vh;
     background-color: rgb(252, 252, 255);
 }
+
+
+
+
 button {
     cursor: pointer;
     border: none;
 }
+
 
 
 
@@ -22,6 +25,7 @@ h1 {
     font-weight: 400;
     color: rgba(0, 0, 0, 0.7);
 }
+
 
 
 
@@ -62,6 +66,7 @@ h1 {
 
 
 
+
 .play-btn {
     padding: 0.4em 2.5em;
     border-radius: 0;
@@ -90,6 +95,7 @@ h1 {
 
 
 
+
 .game-grid {
     width: 40vh;
     height: 40vh;
@@ -113,12 +119,6 @@ h1 {
     .grid-btn {
         background-color: rgb(252, 252, 255);
     }
-/* @media (min-width: 500px) and (min-height: 700px) {
-    .game-grid {
-        width: 40vh;
-        height: 40vh;
-    }
-} */
 @media (min-width: 1000px) and (min-height: 800px) {
     .game-grid {
         width: 50vh;
