@@ -9,14 +9,10 @@ body {
 }
 
 
-
-
 button {
     cursor: pointer;
     border: none;
 }
-
-
 
 
 h1 {
@@ -25,8 +21,6 @@ h1 {
     font-weight: 400;
     color: rgba(0, 0, 0, 0.7);
 }
-
-
 
 
 .players-container {
@@ -65,8 +59,6 @@ h1 {
 }
 
 
-
-
 .play-btn {
     padding: 0.4em 2.5em;
     border-radius: 0;
@@ -92,8 +84,6 @@ h1 {
     color: #fff;
     outline: 2px solid #FF5050;
 }
-
-
 
 
 .game-grid {
