@@ -109,6 +109,7 @@ h1 {
         cursor: default;
         font-size: 3em;
         color: rgba(0, 0, 0, 0.8);
+        padding: 0;
     }
 .game-grid-active {
     background-color: rgba(0, 0, 0, 0.7);
